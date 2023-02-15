@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPoK Fleet Tracker</title>
+</head>
+<body id="fleet-tracker">
+    <div id="nav">
+        <a href="index.html">TPoK Home</a>
+        <a href="joinus.html">Join Us</a>
+        <a href="npguide.html">New Pilot Guides</a>
+        <a href="fleettracker">Fleet Tracker</a>
+        <a href="tpokhistory.html">TPoK History</a>
+    </div>
+    <h1 id="title">TPoK Fleet Tracker</h1>
+    <p id="sub-header">This form is to only be submitted by an FC along with screenshot evidence in Discord</p>
+    <form id="tracker-form">
+        <fieldset>
+            <label for="name" id="name-label">FC Name:  <input required name="tracker-form" id="name" type="text" placeholder="Enter FC Name" /></label>
+            <label for="date" id="date-label">Date:  <input required name="tracker-form" id="date" type="date" placeholder="Enter Date" /></label>
+            <label for="time" id="time-label">Time:  <input required name="tracker-form" id="time" type="time" placeholder="Enter Fleet Start Time" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="activity-type"> Fleet Type:
+                <select id="dropdown" name="tracker-form">
+                <option value="0">(Select an option)</option>
+                <option value="1">Mission Fleet</option>
+                <option value="2">Mining Fleet</option>
+                <option value="3">PvP Fleet</option>
+                <option value="4">Event Fleet</option>
+                <option value="5">Exploration Fleet</option>
+                <option value="6">Event Fleet</option>
+                </select>
+            </label>
+            <label for="duration"> Fleet Duration: 
+                <select id="dropdown" name="tracker-form">
+                <option value="0">(Select an option)</option>
+                <option value="1">1 hr </option>
+                <option value="2">1.5 hrs</option>
+                <option value="3">2 hrs </option>
+                <option value="4">2.5 hrs</option>
+                <option value="5">3 hrs </option>
+                <option value="6">3.5 hrs</option>
+                <option value="6">4 hrs</option>
+                <option value="6">4.5 hrs</option>
+                <option value="6">5 hrs</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="discord">Pinged Fleet on Discord?</label>
+            <label for="yes"><input id="yes" type="checkbox" name="tracker-form" class="inline" value="1" /> Yes</label>
+            <label for="no"><input id="no" type="checkbox" name="tracker-form" class="inline" value="2" /> No</label>
+        </fieldset>
+        <fieldset>
+            <label for="screenshot">Screenshot uploaded to '#fc-fleet-tracker' channel on Discord?</label>
+            <label for="yes"><input id="yes" type="checkbox" name="tracker-form" class="inline" value="1" /> Yes</label>
+            <label for="no"><input id="no" type="checkbox" name="tracker-form" class="inline" value="2" /> No</label>
+        </fieldset>
+        <fieldset>
+            <label for="members">Fleet Members: 
+            <textarea id="members" name="tracker-form" rows="10" cols="50" placeholder="Copy and Paste fleet members here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" name="tracker-form" />
+</body>
+</html>
