@@ -20,7 +20,7 @@ body#joinus {
 
 body#npguide {
     margin: 15px;
-    background: url(praxis3.png) no-repeat center center fixed; 
+    background: url(capfleet1.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,7 +30,7 @@ body#npguide {
 
 body#fleet-tracker {
     margin: 15px;
-    background: url(capfleet.png) no-repeat center center fixed; 
+    background: url(capfleet2.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -147,14 +147,6 @@ padding: 5px;
     text-shadow: 2px 2px 2px #000000;
 }
 
-.ptext2 {
-    word-break: keep-all;
-    text-align: left;
-    margin-left: 100px;
-    font-size: 20px;
-    color: darkgoldenrod;
-}
-
 .container2 {
     display: flex;
     flex-direction: row;
@@ -199,10 +191,42 @@ padding: 5px;
 
 .container3 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 350px;
-    widows: 500px;
+    align-items: stretch;
+    padding: 10px;
+    height: 800px;
+}
+
+.box4 {
+    align-items: left;
+    margin-left: -200px;
+    margin-right: 100px;
+}
+
+.box5 {
+    align-items: right;
+    margin-left: 100px;
+    margin-right: -200px;
+}
+
+.ptext2 {
+    word-break: keep-all;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+
+.ptext3 {
+    word-break: keep-all;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: darkgoldenrod;
 }
 
 form {
